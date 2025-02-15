@@ -82,3 +82,32 @@ Pruning reduces the complexity of the tree:
 - **Pre-pruning (Early Stopping)** – Stop the tree before it becomes too deep.
 - **Post-pruning (Prune After Training)** – Remove weak branches after building the tree.
 
+# Decision Tree Post-Pruning
+
+## 📌 Description
+Post-pruning (also known as **backward pruning**) is a technique used to reduce overfitting in decision trees. Instead of stopping early (**pre-pruning**), a full decision tree is grown, and then unnecessary branches are removed based on validation performance.
+
+## 🚀 How Post-Pruning Works
+1. **Build a Full Decision Tree**: The tree is trained without constraints, capturing all patterns in the training data.
+2. **Evaluate the Tree on Validation Data**: A separate validation set is used to assess the accuracy of different branches.
+3. **Prune Unnecessary Nodes**: Nodes that do not improve validation accuracy are removed.
+4. **Convert Sub-Trees into Leaves**: The pruned branches are replaced with leaf nodes that store the majority class (classification) or average value (regression).
+5. **Final Evaluation**: The pruned tree is tested to ensure better generalization.
+
+## 🔍 Types of Post-Pruning Techniques
+### **1. Cost Complexity Pruning (CCP)**
+- A penalty term is added for model complexity.
+- Commonly used in `sklearn.tree.DecisionTreeClassifier` with `ccp_alpha` parameter.
+
+### **2. Reduced Error Pruning (REP)**
+- Directly removes nodes if validation accuracy does not decrease.
+- One of the simplest methods but may be less optimal.
+
+### **3. Minimum Error Pruning**
+- Uses statistical methods like cross-validation to determine where pruning should occur.
+
+## ✅ Advantages of Post-Pruning
+✔ **Reduces Overfitting** – Helps avoid capturing noise in training data.  
+✔ **Improves Generalization** – The pruned tree performs better on unseen data.  
+✔ **Simplifies the Model** – Results in a smaller, more interpretable decision tree.  
+
