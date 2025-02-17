@@ -111,3 +111,27 @@ Post-pruning (also known as **backward pruning**) is a technique used to reduce 
 ✔ **Improves Generalization** – The pruned tree performs better on unseen data.  
 ✔ **Simplifies the Model** – Results in a smaller, more interpretable decision tree.  
 
+# Awesome Decision Tree Visualization Using `dtreeviz` Library
+
+Decision Trees are powerful models used for **classification** and **regression**. While they are easy to understand, visualizing them effectively is crucial to gaining insights. The `dtreeviz` library provides an **intuitive, detailed, and aesthetically appealing** way to visualize decision trees in Python.
+
+## 1. Detailed Explanation
+
+### What is `dtreeviz`?
+`dtreeviz` is a **Python library** for visualizing Decision Trees with **interactive and detailed representations**. Unlike traditional text-based outputs or basic graph representations, `dtreeviz` creates **graphical representations** that include:
+- **Feature importance**
+- **Split conditions**
+- **Histograms**
+- **Class distributions**
+
+### Why Use `dtreeviz`?
+- **Enhanced Interpretability**: Provides an **easy-to-understand visualization** of tree structures.
+- **Feature Importance Representation**: Highlights the **role of each feature** in decision-making.
+- **Better Than `plot_tree` (Matplotlib/Graphviz)**: Offers **richer visualization** compared to default `sklearn.tree.plot_tree()`.
+- **Supports Multiple Models**: Works with `sklearn`, `XGBoost`, and `LightGBM` decision trees.
+
+## 2. Installation
+
+### Install `dtreeviz`
+```bash
+pip install dtreeviz
