@@ -43,68 +43,41 @@ Machine Learning (ML) can be broadly categorized into three main types, each wit
 
 ### **1. Supervised Learning**
 Definition: The model learns from labeled training data (input-output pairs) to make predictions on unseen data.
-
 How It Works:
-
 Input data (features) and correct answers (labels) are provided.
-
 The model learns the relationship between inputs and outputs.
-
 Once trained, it predicts labels for new, unseen data.
-
 Examples:
-
 Classification: Spam detection (spam vs. not spam).
-
 Regression: Predicting house prices based on features like size and location.
-
 Algorithms:
-
 Linear Regression, Decision Trees, Support Vector Machines (SVM), Neural Networks.
 
 ### **2. Unsupervised Learning**
 Definition: The model finds hidden patterns or structures in unlabeled data (no correct answers provided).
-
 How It Works:
-
 The algorithm explores data to group similar items or reduce complexity.
-
 No predefined output—learning is driven by the data itself.
-
 Examples:
-
 Clustering: Grouping customers by purchasing behavior.
-
 Dimensionality Reduction: Simplifying data for visualization (e.g., PCA).
-
 Algorithms:
-
 K-Means Clustering, Hierarchical Clustering, Principal Component Analysis (PCA).
-
 ### **3. Reinforcement Learning (RL)**
 Definition: The model learns by trial and error, receiving feedback as rewards or penalties.
-
 How It Works:
-
 An agent interacts with an environment.
-
 It takes actions to maximize cumulative rewards (e.g., winning a game).
-
 Learns optimal strategies through repeated experiences.
-
 Examples:
-
 Self-driving cars (rewarded for safe driving).
-
 Game-playing AI (e.g., AlphaGo, OpenAI’s Dota 2 bot).
 
 ## **Algorithms:**
-
 Q-Learning, Deep Q-Networks (DQN), Policy Gradient Methods.
-
 ## **Batch Learning vs. Online Machine Learning**
-Machine learning models can be trained in two primary ways: Batch Learning (offline learning) and Online Learning (incremental learning). They differ in how they process data and update the model.
-
+Machine learning models can be trained in two primary ways: Batch Learning (offline learning) and Online Learning (incremental learning). They differ in
+how they process data and update the model.
 ### **Batch Learning**
 1. Batch Learning (Offline Learning)
 Definition:
